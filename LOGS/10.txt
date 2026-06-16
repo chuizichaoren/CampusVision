@@ -1,0 +1,1 @@
+Updated gradio-client to 1.3.0 to resolve dependency conflict with gradio 4.43.0.

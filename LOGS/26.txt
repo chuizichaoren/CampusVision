@@ -1,0 +1,1 @@
+Reinstalled imageio-ffmpeg via pip for FFMPEG support. Tesseract binary cannot be installed via pip; provided instructions for manual download and installation.

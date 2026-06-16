@@ -1,0 +1,18 @@
+# Core dependencies with compatible versions
+gradio==5.49.1  # Upgraded to latest stable version
+gradio-client==1.13.3  # Upgraded to latest stable version
+openai-whisper==20231117
+ultralytics==8.0.196  # Includes YOLOv8
+pytesseract==0.3.10
+torch==2.0.1  # Pin to avoid NumPy 2.x issues
+torchvision==0.15.2
+faiss-cpu==1.7.4  # Use CPU version (GPU not easily available via pip)
+moviepy==1.0.3
+pandas
+numpy==1.25.2  # Upgraded for better compatibility
+pillow==10.0.0
+transformers==4.36.0  # Updated for huggingface_hub compatibility
+sentence-transformers==2.7.0  # Updated to support newer huggingface_hub
+opencv-python==4.8.1.78
+librosa==0.10.1
+tqdm==4.66.1

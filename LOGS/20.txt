@@ -1,0 +1,1 @@
+Added validation to check if the copied video file can be opened by cv2.VideoCapture to detect invalid videos early.

@@ -1,0 +1,1 @@
+Upgraded Gradio to 4.44.1 to fix client utils TypeError. Added share=True to interface.launch() to resolve localhost access error.

@@ -1,0 +1,1 @@
+Upgraded Gradio to 5.49.1 and gradio-client to 1.13.3; updated requirements.txt to match. NumPy upgraded to 1.25.2. System now runs successfully without TypeError.

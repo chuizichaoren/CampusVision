@@ -1,0 +1,1 @@
+Implemented core processing functions: process_video with Whisper audio transcription, YOLO object detection, Tesseract OCR, and CLIP embeddings. Added FAISS indexing in index_data. Implemented query_system with text embedding search and video clip generation. Updated Gradio interface with proper event handling and download button.

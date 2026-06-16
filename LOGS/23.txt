@@ -1,0 +1,1 @@
+Installed Tesseract OCR via Chocolatey and configured pytesseract path. Added FFMPEG path configuration for MoviePy and enhanced logging for audio extraction to debug [WinError 2]. Updated code to handle OCR errors gracefully.

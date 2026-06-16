@@ -1,0 +1,1 @@
+Added gradio-client==1.3.0 to requirements.txt to fix TypeError in utils.py. Removed share=True from interface.launch() due to antivirus blocking on Windows; use localhost or run as admin.

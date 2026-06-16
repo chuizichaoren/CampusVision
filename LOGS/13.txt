@@ -1,0 +1,1 @@
+Fixed audio extraction error by ensuring directories exist and adding error handling for MoviePy audio write and Whisper transcription.

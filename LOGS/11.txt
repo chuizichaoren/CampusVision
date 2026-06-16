@@ -1,0 +1,1 @@
+Further downgraded Gradio to 4.42.0 and gradio-client to 1.1.0 to avoid TypeError in utils.py. Removed share=True from interface.launch() to avoid antivirus blocking.

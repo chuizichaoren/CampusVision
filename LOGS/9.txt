@@ -1,0 +1,1 @@
+Downgraded Gradio to 4.43.0 and gradio-client to 1.2.0 to fix TypeError in utils.py. Re-added share=True to interface.launch() with note about allowing frpc in Windows Defender.

@@ -1,0 +1,1 @@
+Removed hardcoded paths for Tesseract and FFMPEG to use system PATH. Reinstalled imageio-ffmpeg. OCR and audio errors persist due to missing system binaries; suggested manual installation of Chocolatey and Tesseract/FFMPEG.

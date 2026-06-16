@@ -1,0 +1,1 @@
+Updated transformers to 4.36.0 and sentence-transformers to 2.7.0 to resolve huggingface_hub import error for cached_download.

@@ -1,0 +1,1 @@
+MoviePy now imports successfully after installing imageio-ffmpeg. Audio extraction should work without [WinError 2].

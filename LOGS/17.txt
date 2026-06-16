@@ -1,0 +1,1 @@
+Added video file copying to uploads directory to handle Gradio temporary file path issues causing [WinError 2].

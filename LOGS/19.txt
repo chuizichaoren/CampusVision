@@ -1,0 +1,1 @@
+Added verification after copying the video file to ensure it exists before processing.

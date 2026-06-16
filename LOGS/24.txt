@@ -1,0 +1,1 @@
+Fixed 'pil_image' not defined error by defining it in the OCR try-except block. Updated audio extraction to proper indentation.

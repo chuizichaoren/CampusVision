@@ -1,0 +1,1 @@
+Added absolute path conversion and logging to debug file path issues in process_video.

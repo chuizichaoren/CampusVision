@@ -1,0 +1,1 @@
+Applied fixes for NumPy version conflict and GPU detection: Updated requirements.txt to pin NumPy to 1.24.3 and use faiss-cpu. Added logging and error handling to main.py for better GPU/CPU detection and debugging.

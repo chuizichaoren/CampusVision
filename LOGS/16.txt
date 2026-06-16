@@ -1,0 +1,1 @@
+Added file existence and validity checks in process_video to handle [WinError 2] file not found errors.

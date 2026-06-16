@@ -1,0 +1,1 @@
+Created main.py with initial Gradio UI structure, model initializations, and placeholder functions. Added requirements.txt with necessary dependencies.
