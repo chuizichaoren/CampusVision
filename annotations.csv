@@ -1,0 +1,6 @@
+image_filename,object_id,class,class_id,confidence,timestamp,timestamp_sec,bbox_x1,bbox_y1,bbox_x2,bbox_y2,bbox_width,bbox_height,crop_path,image_width,image_height
+frame_000000_00-00-00-000.jpg,0,person,0,0.7257136106491089,00-00-00-000,0.0,500,157,528,229,28,72,E:\CODE_File\YOLOB\Video-RAG\object_crops\frame_000000_00-00-00-000_bbox_00.jpg,768,576
+frame_000000_00-00-00-000.jpg,1,traffic light,9,0.7075414657592773,00-00-00-000,0.0,253,218,281,309,28,91,E:\CODE_File\YOLOB\Video-RAG\object_crops\frame_000000_00-00-00-000_bbox_01.jpg,768,576
+frame_000000_00-00-00-000.jpg,2,person,0,0.45603427290916443,00-00-00-000,0.0,643,242,681,321,38,79,E:\CODE_File\YOLOB\Video-RAG\object_crops\frame_000000_00-00-00-000_bbox_02.jpg,768,576
+frame_000000_00-00-00-000.jpg,3,truck,7,0.20240531861782074,00-00-00-000,0.0,653,45,721,97,68,52,E:\CODE_File\YOLOB\Video-RAG\object_crops\frame_000000_00-00-00-000_bbox_03.jpg,768,576
+frame_000000_00-00-00-000.jpg,4,bus,5,0.17640747129917145,00-00-00-000,0.0,736,53,767,92,31,39,E:\CODE_File\YOLOB\Video-RAG\object_crops\frame_000000_00-00-00-000_bbox_04.jpg,768,576

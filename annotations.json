@@ -1,0 +1,122 @@
+{
+    "total_frames": 1,
+    "total_objects": 5,
+    "frames": [
+        {
+            "filename": "frame_000000_00-00-00-000.jpg",
+            "image_path": "E:\\CODE_File\\YOLOB\\说明\\annotated_frames\\frame_000000_00-00-00-000.jpg",
+            "timestamp": "00-00-00-000",
+            "timestamp_sec": 0.0,
+            "width": 768,
+            "height": 576,
+            "object_count": 5,
+            "detections": [
+                {
+                    "object_id": 0,
+                    "class": "person",
+                    "class_id": 0,
+                    "confidence": 0.7257136106491089,
+                    "bbox": [
+                        500,
+                        157,
+                        528,
+                        229
+                    ],
+                    "bbox_expanded": [
+                        495,
+                        152,
+                        533,
+                        234
+                    ],
+                    "crop_path": "E:\\CODE_File\\YOLOB\\Video-RAG\\object_crops\\frame_000000_00-00-00-000_bbox_00.jpg",
+                    "bbox_width": 28,
+                    "bbox_height": 72
+                },
+                {
+                    "object_id": 1,
+                    "class": "traffic light",
+                    "class_id": 9,
+                    "confidence": 0.7075414657592773,
+                    "bbox": [
+                        253,
+                        218,
+                        281,
+                        309
+                    ],
+                    "bbox_expanded": [
+                        248,
+                        213,
+                        286,
+                        314
+                    ],
+                    "crop_path": "E:\\CODE_File\\YOLOB\\Video-RAG\\object_crops\\frame_000000_00-00-00-000_bbox_01.jpg",
+                    "bbox_width": 28,
+                    "bbox_height": 91
+                },
+                {
+                    "object_id": 2,
+                    "class": "person",
+                    "class_id": 0,
+                    "confidence": 0.45603427290916443,
+                    "bbox": [
+                        643,
+                        242,
+                        681,
+                        321
+                    ],
+                    "bbox_expanded": [
+                        638,
+                        237,
+                        686,
+                        326
+                    ],
+                    "crop_path": "E:\\CODE_File\\YOLOB\\Video-RAG\\object_crops\\frame_000000_00-00-00-000_bbox_02.jpg",
+                    "bbox_width": 38,
+                    "bbox_height": 79
+                },
+                {
+                    "object_id": 3,
+                    "class": "truck",
+                    "class_id": 7,
+                    "confidence": 0.20240531861782074,
+                    "bbox": [
+                        653,
+                        45,
+                        721,
+                        97
+                    ],
+                    "bbox_expanded": [
+                        648,
+                        40,
+                        726,
+                        102
+                    ],
+                    "crop_path": "E:\\CODE_File\\YOLOB\\Video-RAG\\object_crops\\frame_000000_00-00-00-000_bbox_03.jpg",
+                    "bbox_width": 68,
+                    "bbox_height": 52
+                },
+                {
+                    "object_id": 4,
+                    "class": "bus",
+                    "class_id": 5,
+                    "confidence": 0.17640747129917145,
+                    "bbox": [
+                        736,
+                        53,
+                        767,
+                        92
+                    ],
+                    "bbox_expanded": [
+                        731,
+                        48,
+                        768,
+                        97
+                    ],
+                    "crop_path": "E:\\CODE_File\\YOLOB\\Video-RAG\\object_crops\\frame_000000_00-00-00-000_bbox_04.jpg",
+                    "bbox_width": 31,
+                    "bbox_height": 39
+                }
+            ]
+        }
+    ]
+}
