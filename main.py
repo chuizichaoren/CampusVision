@@ -312,3 +312,61 @@ def gradio_interface():
 if __name__ == "__main__":
     interface = gradio_interface()
     interface.launch()  # Use localhost; if blocked, run as admin or allow in Windows Defender
+
+# =============================================================================
+# 智瞳 CampusVision - LLM 问答模块接入点说明 (由 LLM 模块负责人添加, 不影响原逻辑)
+# =============================================================================
+#
+# 改造目标: 把上面 `query_system()` 中硬编码的 `f"Found {len(results)} relevant
+# segments. ..."` 替换为基于 LLM 的自然语言回答, 同时把 `generate_clip()` 替换为
+# 直接展示 CLIP B 检索返回的目标裁剪图 (crop_path) Gallery。
+#
+# 推荐接入位置: `on_query()` 函数 (位于本文件约 294 行)。
+#
+# 示例替换代码 (Gradio 同学可按需改造) ------------------------------
+#
+#     from pathlib import Path
+#     from llm_qa.qa_engine import answer_question
+#     from clip_search import search_by_text
+#
+#     def on_query(query, video_state):
+#         # 1) CLIP B 检索: 用户问题 -> top-k 目标元数据
+#         results = search_by_text(
+#             query=query,
+#             index_dir="processed/clip_index",   # CLIP A 产物目录
+#             top_k=5,
+#         )
+#         # 2) 组装 video_meta (默认从 video_state 推断)
+#         if isinstance(video_state, dict):
+#             video_name = Path(video_state.get("video_path", "uploaded.mp4")).name
+#             duration = video_state.get("duration", "-")
+#         else:
+#             video_name, duration = "uploaded.mp4", "-"
+#         # 3) LLM 问答: 基于检索证据生成自然语言回答
+#         result = answer_question(
+#             question=query,
+#             retrieval_results=results,
+#             video_meta={"video_name": video_name,
+#                         "duration": duration,
+#                         "detection_count": len(results)},
+#         )
+#         # 4) 返回: 文本 + 目标裁剪图路径列表 (Gradio 用 gr.Gallery 渲染)
+#         image_paths = [r["crop_path"] for r in results]
+#         return result, image_paths
+#
+# 配套要求:
+#   1. CLIP B 同学已实现 `clip_search/search_clip.py` 并提供
+#      `search_by_text()` 接口 (见 llm_qa/contract_with_clip_b.md)。
+#   2. YOLO 同学确保 `detections.csv` / `clip_metadata.json` 中含
+#      `timestamp` / `class_name` / `crop_path` 字段 (已是项目基础要求)。
+#   3. 在项目根 `requirements.txt` 中已追加:
+#         openai>=1.0.0
+#         python-dotenv>=1.0.0
+#   4. 在项目根创建 `.env` (或复制 `llm_qa/.env.example` 为
+#      `llm_qa/.env`), 配置 `DEEPSEEK_API_KEY=sk-xxx`。
+#   5. CLIP A 同学已生成 `processed/clip_index/{faiss.index,
+#      clip_metadata.json, image_embeddings.npy}`。
+#
+# 完整文档与测试: 见 `llm_qa/README.md` 与 `llm_qa/tests/test_qa_engine.py`。
+# =============================================================================
+

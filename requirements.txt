@@ -16,3 +16,6 @@ sentence-transformers==2.7.0  # Updated to support newer huggingface_hub
 opencv-python==4.8.1.78
 librosa==0.10.1
 tqdm==4.66.1
+# LLM 问答模块依赖 (DeepSeek 兼容 OpenAI 协议)
+openai>=1.0.0
+python-dotenv>=1.0.0
