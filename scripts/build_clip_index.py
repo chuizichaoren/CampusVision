@@ -19,8 +19,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Build a CLIP image embedding FAISS index from YOLO object crops."
     )
-    parser.add_argument("--crop-dir", default="processed/object_crops")
-    parser.add_argument("--detection-csv", default="processed/detections.csv")
+    parser.add_argument("--crop-dir", default="processed/yolo_detection/object_crops")
+    parser.add_argument("--detection-csv", default="processed/yolo_detection/detections.csv")
     parser.add_argument("--output-dir", default="processed/clip_index")
     parser.add_argument("--model-name", default="openai/clip-vit-base-patch32")
     parser.add_argument("--batch-size", type=int, default=32)
